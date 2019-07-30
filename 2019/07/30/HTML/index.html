@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>常见的端口号 · Cong&#39;s Blog</title>
+    <title>Cong&#39;s Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/" >Cong&#39;s Blog.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">常见的端口号</a>
+                <a href="#" class="post-name"></a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            常见的端口号
+            [Untitled Post]
             <!-- 404 -->
             
         </h1>
@@ -266,12 +266,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">3.7k</span>阅读时长: <span class="post-count reading-time">14 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">717</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/07/29</span>
+                    <span class="post-intro-time">2019/07/30</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -395,81 +395,28 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>端口                                               端口说明                                       攻击方向<br>21/22/69                          Ftp/Tftp文件传输协议                          允许匿名上传，下载，爆破和嗅探操作<br>2049                              Nfs服务                                      配置不当<br>139                               Samba服务                                    爆破、未授权访问、远程代码执行<br>389                               Ldap目录访问协议                              注入、允许匿名访问、弱口令<br>22                                SSH远程连接                                   爆破、SSH隧道及内网代理转发、文件传输<br>23                                Telnet远程连接                                爆破、嗅探、弱口令<br>3389                              Rdp远程桌面连接                               Shin后门(需要Windows Sever 2003以下的系统)、爆破<br>5900                              VNC                                          弱口令爆破<br>5632                              PyAnywhere服务                               抓密码、  代码执行<br>80/443/8080                       常见的Web服务端口                             Web攻击、爆破、对应服务器版本漏洞<br>7001/7002                         WebLogic 控制台                              Java反序列化、弱口令<br>8080/8089                         Jboss/Resin/jetty/jenkins                    反序列化、控制台弱口令<br>9090                              WebSphere 控制台                              Java反序列化、弱口令<br>4848                              GlassFish控制台                               弱口令<br>1352                              Lotus domino邮件服务                          弱口令、信息泄露、爆破<br>10000                             Webmin-Web控制面板                            弱口令<br>3306                              MySQL                                        注入、提权、爆破<br>1433                              MSSQL数据库                                   注入、提权、SA弱口令、爆破<br>1521                              Oracle数据库                                  TNS爆破、注入、反弹Shell<br>5432                              PostgreSQL数据库                              爆破、注入、弱口令<br>27017/27018                       MongoDB                                      爆破、未授权访问<br>6379                              Redis数据库                                  可尝试未授权访问、弱口令爆破<br>5000                              SysBase/DB2数据库                            爆破、注入<br>25                                SMTP邮件服务                                 邮件伪造<br>110                               POP3协议                                     爆破、嗅探<br>143                               IMAP协议                                     爆破<br>53                                DNS域名系统                                  允许区域传送、DNS劫持、缓存投毒、欺骗<br>67/68                             DHCP服务                                     劫持、欺骗<br>161                               SNMP协议                                     爆破、搜集目标内网信息<br>2181                              Zookeeper服务                                未授权访问<br>11211                             Memcache服务                                 未授权访问<br>8069                              Zabbix服务                                   远程执行、SQL注入<br>9200/9300                         Elasticsearch服务                            远程执行<br> 512/513/514                      Linux Rexec服务                              爆破、Rlogin 登录<br>873                               Rsync服务                                    匿名访问、文件上传<br>3690                              Svn服务                                      Svn泄露、未授权访问<br>50000                             SAP Management Console                       远程执行</p>
-<p>端口：0<br>服务：Reserved<br>说明：通常用于分析操作系统。这一方法能够工作是因为在一些系统中“0”是无效端口，当你试图使用通常的闭合端口连接它时将产生不同的结果。一种典型的扫描，使用IP地址为0.0.0.0，设置ACK位并在以太网层广播。 </p>
-<p>端口：1<br>服务：tcpmux<br>说明：这显示有人在寻找SGI Irix机器。Irix是实现tcpmux的主要提供者，默认情况下tcpmux在这种系统中被打开。Irix机器在发布是含有几个默认的无密码的帐户，如：IP、GUEST UUCP、NUUCP、DEMOS 、TUTOR、DIAG、OUTOFBOX等。许多管理员在安装后忘记删除这些帐户。因此HACKER在INTERNET上搜索tcpmux并利用这些帐户。 </p>
-<p>端口：7<br>服务：Echo<br>说明：能看到许多人搜索Fraggle放大器时，发送到X.X.X.0和X.X.X.255的信息。 </p>
-<p>端口：19<br>服务：Character Generator<br>说明：这是一种仅仅发送字符的服务。UDP版本将会在收到UDP包后回应含有垃圾字符的包。TCP连接时会发送含有垃圾字符的数据流直到连接关闭。HACKER利用IP欺骗可以发动DoS攻击。伪造两个chargen服务器之间的UDP包。同样Fraggle DoS攻击向目标地址的这个端口广播一个带有伪造受害者IP的数据包，受害者为了回应这些数据而过载。 </p>
-<p>端口：21<br>服务：FTP<br>说明：FTP服务器所开放的端口，用于上传、下载。最常见的攻击者用于寻找打开anonymous的FTP服务器的方法。这些服务器带有可读写的目录。木马Doly Trojan、Fore、Invisible FTP、WebEx、WinCrash和Blade Runner所开放的端口。 </p>
-<p>端口：22<br>服务：Ssh<br>说明：PcAnywhere建立的TCP和这一端口的连接可能是为了寻找ssh。这一服务有许多弱点，如果配置成特定的模式，许多使用RSAREF库的版本就会有不少的漏洞存在。 </p>
-<p>端口：23<br>服务：Telnet<br>说明：远程登录，入侵者在搜索远程登录UNIX的服务。大多数情况下扫描这一端口是为了找到机器运行的操作系统。还有使用其他技术，入侵者也会找到密码。木马Tiny Telnet Server就开放这个端口。 </p>
-<p>端口：25<br>服务：SMTP<br>说明：SMTP服务器所开放的端口，用于发送邮件。入侵者寻找SMTP服务器是为了传递他们的SPAM。入侵者的帐户被关闭，他们需要连接到高带宽的E-MAIL服务器上，将简单的信息传递到不同的地址。木马Antigen、Email Password Sender、Haebu Coceda、Shtrilitz Stealth、WinPC、WinSpy都开放这个端口。 </p>
-<p>端口：31<br>服务：MSG Authentication<br>说明：木马Master Paradise、Hackers Paradise开放此端口。 </p>
-<p>端口：42<br>服务：WINS Replication<br>说明：WINS复制 </p>
-<p>端口：53<br>服务：Domain Name Server（DNS）<br>说明：DNS服务器所开放的端口，入侵者可能是试图进行区域传递（TCP），欺骗DNS（UDP）或隐藏其他的通信。因此防火墙常常过滤或记录此端口。 </p>
-<p>端口：67<br>服务：Bootstrap Protocol Server<br>说明：通过DSL和Cable modem的防火墙常会看见大量发送到广播地址255.255.255.255的数据。这些机器在向DHCP服务器请求一个地址。HACKER常进入它们，分配一个地址把自己作为局部路由器而发起大量中间人（man-in-middle）攻击。客户端向68端口广播请求配置，服务器向67端口广播回应请求。这种回应使用广播是因为客户端还不知道可以发送的IP地址。 </p>
-<p>端口：69<br>服务：Trival File Transfer<br>说明：许多服务器与bootp一起提供这项服务，便于从系统下载启动代码。但是它们常常由于错误配置而使入侵者能从系统中窃取任何 文件。它们也可用于系统写入文件。 </p>
-<p>端口：79<br>服务：Finger Server<br>说明：入侵者用于获得用户信息，查询操作系统，探测已知的缓冲区溢出错误，回应从自己机器到其他机器Finger扫描。 </p>
-<p>端口：80<br>服务：HTTP<br>说明：用于网页浏览。木马Executor开放此端口。 </p>
-<p>端口：99<br>服务：gram Relay<br>说明：后门程序ncx99开放此端口。 </p>
-<p>端口：102<br>服务：Message transfer agent(MTA)-X.400 over TCP/IP<br>说明：消息传输代理。 </p>
-<p>端口：109<br>服务：Post Office Protocol -Version3<br>说明：POP3服务器开放此端口，用于接收邮件，客户端访问服务器端的邮件服务。POP3服务有许多公认的弱点。关于用户名和密码交 换缓冲区溢出的弱点至少有20个，这意味着入侵者可以在真正登陆前进入系统。成功登陆后还有其他缓冲区溢出错误。 </p>
-<p>端口：110<br>服务：SUN公司的RPC服务所有端口<br>说明：常见RPC服务有rpc.mountd、NFS、rpc.statd、rpc.csmd、rpc.ttybd、amd等 </p>
-<p>端口：113<br>服务：Authentication Service<br>说明：这是一个许多计算机上运行的协议，用于鉴别TCP连接的用户。使用标准的这种服务可以获得许多计算机的信息。但是它可作为许多服务的记录器，尤其是FTP、POP、IMAP、SMTP和IRC等服务。通常如果有许多客户通过防火墙访问这些服务，将会看到许多这个端口的连接请求。记住，如果阻断这个端口客户端会感觉到在防火墙另一边与E-MAIL服务器的缓慢连接。许多防火墙支持TCP连接的阻断过程中发回RST。这将会停止缓慢的连接。 </p>
-<p>端口：119<br>服务：Network News Transfer Protocol<br>说明：NEWS新闻组传输协议，承载USENET通信。这个端口的连接通常是人们在寻找USENET服务器。多数ISP限制，只有他们的客户才能访问他们的新闻组服务器。打开新闻组服务器将允许发/读任何人的帖子，访问被限制的新闻组服务器，匿名发帖或发送SPAM。 </p>
-<p>端口：135<br>服务：Location Service<br>说明：Microsoft在这个端口运行DCE RPC end-point mapper为它的DCOM服务。这与UNIX 111端口的功能很相似。使用DCOM和RPC的服务利用计算机上的end-point mapper注册它们的位置。远端客户连接到计算机时，它们查找end-point mapper找到服务的位置。HACKER扫描计算机的这个端口是为了找到这个计算机上运行Exchange Server吗？什么版本？还有些DOS攻击直接针对这个端口。 </p>
-<p>端口：137、138、139<br>服务：NETBIOS Name Service<br>说明：其中137、138是UDP端口，当通过网上邻居传输文件时用这个端口。而139端口：通过这个端口进入的连接试图获得NetBIOS/SMB服务。这个协议被用于windows文件和打印机共享和SAMBA。还有WINS Regisrtation也用它。 </p>
-<p>端口：143<br>服务：Interim Mail Access Protocol v2<br>说明：和POP3的安全问题一样，许多IMAP服务器存在有缓冲区溢出漏洞。记住：一种LINUX蠕虫（admv0rm）会通过这个端口繁殖，因此许多这个端口的扫描来自不知情的已经被感染的用户。当REDHAT在他们的LINUX发布版本中默认允许IMAP后，这些漏洞变的很流行。这一端口还被用于IMAP2，但并不流行。 </p>
-<p>端口：161<br>服务：SNMP<br>说明：SNMP允许远程管理设备。所有配置和运行信息的储存在数据库中，通过SNMP可获得这些信息。许多管理员的错误配置将被暴露在Internet。Cackers将试图使用默认的密码public、private访问系统。他们可能会试验所有可能的组合。SNMP包可能会被错误的指向用户的网络。 </p>
-<p>端口：177<br>服务：X Display Manager Control Protocol<br>说明：许多入侵者通过它访问X-windows操作台，它同时需要打开6000端口。 </p>
-<p>端口：389<br>服务：LDAP、ILS<br>说明：轻型目录访问协议和NetMeeting Internet Locator Server共用这一端口。 </p>
-<p>端口：443<br>服务：Https<br>说明：网页浏览端口，能提供加密和通过安全端口传输的另一种HTTP。 </p>
-<p>端口：456<br>服务：[NULL]<br>说明：木马HACKERS PARADISE开放此端口。 </p>
-<p>端口：513<br>服务：Login,remote login<br>说明：是从使用cable modem或DSL登陆到子网中的UNIX计算机发出的广播。这些人为入侵者进入他们的系统提供了信息。 </p>
-<p>端口：544<br>服务：[NULL]<br>说明：kerberos kshell </p>
-<p>端口：548<br>服务：Macintosh,File Services(AFP/IP)<br>说明：Macintosh,文件服务。 </p>
-<p>端口：553<br>服务：CORBA IIOP （UDP）<br>说明：使用cable modem、DSL或VLAN将会看到这个端口的广播。CORBA是一种面向对象的RPC系统。入侵者可以利用这些信息进入系统。 </p>
-<p>端口：555<br>服务：DSF<br>说明：木马PhAse1.0、Stealth Spy、IniKiller开放此端口。 </p>
-<p>端口：568<br>服务：Membership DPA<br>说明：成员资格 DPA。 </p>
-<p>端口：569<br>服务：Membership MSN<br>说明：成员资格 MSN。 </p>
-<p>端口：635<br>服务：mountd<br>说明：Linux的mountd Bug。这是扫描的一个流行BUG。大多数对这个端口的扫描是基于UDP的，但是基于TCP的mountd有所增加（mountd同时运行于两个端口）。记住mountd可运行于任何端口（到底是哪个端口，需要在端口111做portmap查询），只是Linux默认端口是635，就像NFS通常运行于2049端口。 </p>
-<p>端口：636<br>服务：LDAP<br>说明：SSL（Secure Sockets layer） </p>
-<p>端口：666<br>服务：Doom Id Software<br>说明：木马Attack FTP、Satanz Backdoor开放此端口 </p>
-<p>端口：993<br>服务：IMAP<br>说明：SSL（Secure Sockets layer） </p>
-<p>端口：1001、1011<br>服务：[NULL]<br>说明：木马Silencer、WebEx开放1001端口。木马Doly Trojan开放1011端口。 </p>
-<p>端口：1024<br>服务：Reserved<br>说明：它是动态端口的开始，许多程序并不在乎用哪个端口连接网络，它们请求系统为它们分配下一个闲置端口。基于这一点分配从端口1024开始。这就是说第一个向系统发出请求的会分配到1024端口。你可以重启机器，打开Telnet，再打开一个窗口运行natstat -a 将会看到Telnet被分配1024端口。还有SQL session也用此端口和5000端口。 </p>
-<p>端口：1025、1033<br>服务：1025：network blackjack 1033：[NULL]<br>说明：木马netspy开放这2个端口。 </p>
-<p>端口：1080<br>服务：SOCKS<br>说明：这一协议以通道方式穿过防火墙，允许防火墙后面的人通过一个IP地址访问INTERNET。理论上它应该只允许内部的通信向外到达INTERNET。但是由于错误的配置，它会允许位于防火墙外部的攻击穿过防火墙。WinGate常会发生这种错误，在加入IRC聊天室时常会看到这种情况。 </p>
-<p>端口：1170<br>服务：[NULL]<br>说明：木马Streaming Audio Trojan、Psyber Stream Server、Voice开放此端口。 </p>
-<p>端口：1234、1243、6711、6776<br>服务：[NULL]<br>说明：木马SubSeven2.0、Ultors Trojan开放1234、6776端口。木马SubSeven1.0/1.9开放1243、6711、6776端口。 </p>
-<p>端口：1245<br>服务：[NULL]<br>说明：木马Vodoo开放此端口。 </p>
-<p>端口：1433<br>服务：SQL<br>说明：Microsoft的SQL服务开放的端口。 </p>
-<p>端口：1492<br>服务：stone-design-1<br>说明：木马FTP99CMP开放此端口。 </p>
-<p>端口：1500<br>服务：RPC client fixed port session queries<br>说明：RPC客户固定端口会话查询 </p>
-<p>端口：1503<br>服务：NetMeeting T.120<br>说明：NetMeeting T.120 </p>
-<p>端口：1524<br>服务：ingress<br>说明：许多攻击脚本将安装一个后门SHELL于这个端口，尤其是针对SUN系统中Sendmail和RPC服务漏洞的脚本。如果刚安装了防火墙就看到在这个端口上的连接企图，很可能是上述原因。可以试试Telnet到用户的计算机上的这个端口，看看它是否会给你一个SHELL。连接到600/pcserver也存在这个问题。 </p>
-<p>端口：1600<br>服务：issd<br>说明：木马Shivka-Burka开放此端口。 </p>
-<p>端口：1720<br>服务：NetMeeting<br>说明：NetMeeting H.233 call Setup。 </p>
-<p>端口：1731<br>服务：NetMeeting Audio Call Control<br>说明：NetMeeting音频调用控制。 </p>
-<p>端口：1807<br>服务：[NULL]<br>说明：木马SpySender开放此端口。 </p>
-<p>端口：1981<br>服务：[NULL]<br>说明：木马ShockRave开放此端口。 </p>
-<p>端口：1999<br>服务：cisco identification port<br>说明：木马BackDoor开放此端口。 </p>
-<p>端口：2000<br>服务：[NULL]<br>说明：木马GirlFriend 1.3、Millenium 1.0开放此端口。 </p>
-<p>端口：2001<br>服务：[NULL]<br>说明：木马Millenium 1.0、Trojan Cow开放此端口。 </p>
-<p>端口：2023<br>服务：xinuexpansion 4<br>说明：木马Pass Ripper开放此端口。 </p>
-<p>端口：2049<br>服务：NFS<br>说明：NFS程序常运行于这个端口。通常需要访问Portmapper查询这个服务运行于哪个端口。 </p>
-<p>端口：2115<br>服务：[NULL]<br>说明：木马Bugs开放此端口。 </p>
-<p>端口：2140、3150<br>服务：[NULL]<br>说明：木马Deep Throat 1.0/3.0开放此端口。 </p>
-<p>端口：2500<br>服务：RPC client using a fixed port session replication<br>说明：应用固定端口会话复制的RPC客</p>
+        <hr>
+<h2 id="title：-HTML基础学习记录"><a href="#title：-HTML基础学习记录" class="headerlink" title="title： HTML基础学习记录"></a>title： HTML基础学习记录</h2><h1 id="0x01-什么是HTML-来自百度百科"><a href="#0x01-什么是HTML-来自百度百科" class="headerlink" title="0x01 什么是HTML(来自百度百科)"></a>0x01 什么是HTML(来自百度百科)</h1><p>  超文本标记语言（Hyper Text Marku Language) ,标准通用标记语言的一个应用。HTML不是一种编程语言，而是一种标 记语言,是网页制作所必备的.”超文本”就是指页面可以包含图片、链接、甚至音乐、程序等非文字元素。超文本标记语言的机构包括<br>  “头”部分、和”主体”部分,其中”头”部提供关于网页的信息，”主体”部分提供网页的具体内容。</p>
+<h2 id="0x02-定义："><a href="#0x02-定义：" class="headerlink" title="0x02 定义："></a>0x02 定义：</h2><p>  超级文本标记语言是标准通用标记语言下的一个应用，也是一种规范，一种标准，它通过标记符号来标记要显示的网页中的各个部分。网页文件本身是一种文本文件，通过在文本文件中添加标记符，可以告诉浏览器如何显示其中的内容（如：文字如何处理，画面如何安排，图片如何显示等）。浏览器按顺序阅读网页文件，然后根据标记符解释和显示其标记的内容，对书写出错的标记将不指出其错误，且不停止其解释执行过程，编制者只能通过显示效果来分析出错原因和出错部位。但需要注意的是，对于不同的浏览器，对同一标记符可能会有不完全相同的解释，因而可能会有不同的显示效果。</p>
+<h2 id="0x03-语言特点"><a href="#0x03-语言特点" class="headerlink" title="0x03 语言特点"></a>0x03 语言特点</h2><p>   超级文本标记语言文档制作不是很复杂，但功能强大，支持不同数据格式的文件镶入，这也是万维网（WWW）盛行的原因之一，其主要特点如下：</p>
+<p>   1.简易性：超级文本标记语言版本升级采用超集方式，从而更加灵活方便。<br>   2.可扩展性：超级文本标记语言的广泛应用带来了加强功能，增加标识符等要求，超级文本标记语言采取子类元素的方式，为系统扩展带来保证。<br>   3.平台无关性：虽然个人计算机大行其道，但使用MAC等其他机器的大有人在，超级文本标记语言可以使用在广泛的平台上，这也是万维网（WWW）盛行的另一个原因。<br>   4.通用性：另外，HTML是网络的通用语言,一种简单、通用的全置标记语言。它允许网页制作人建立文本与图片相结合的复杂页面，这些页面可以被网上任何其他人浏览到，无论使用的是什么类型的电脑或浏览器。</p>
+<h1 id="0x04-基础格式和标签简录"><a href="#0x04-基础格式和标签简录" class="headerlink" title="0x04  基础格式和标签简录"></a>0x04  基础格式和标签简录</h1><h2 id="0x05-HTML语言基础格式"><a href="#0x05-HTML语言基础格式" class="headerlink" title="0x05 HTML语言基础格式"></a>0x05 HTML语言基础格式</h2><html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <title></title>
+</head>
+<body>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
 
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="http://yoursite.com">cong cong</a>
-            <p>原文链接：<a href="http://yoursite.com/2019/07/29/常见的端口/">http://yoursite.com/2019/07/29/常见的端口/</a>
-            <p>发表日期：<a href="http://yoursite.com/2019/07/29/常见的端口/">July 29th 2019, 10:11:52 pm</a>
-            <p>更新日期：<a href="http://yoursite.com/2019/07/29/常见的端口/">July 29th 2019, 10:19:00 pm</a>
+            <p>原文链接：<a href="http://yoursite.com/2019/07/30/HTML/">http://yoursite.com/2019/07/30/HTML/</a>
+            <p>发表日期：<a href="http://yoursite.com/2019/07/30/HTML/">July 30th 2019, 8:37:19 pm</a>
+            <p>更新日期：<a href="http://yoursite.com/2019/07/30/HTML/">July 30th 2019, 9:24:21 pm</a>
             <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -477,17 +424,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2019/07/30/HTML/" title= "">
-                    <div class="nextTitle">[Untitled Post]</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/2019/07/29/渗透学习笔记 一/" title= "渗透学习笔记 一">
-                    <div class="prevTitle">渗透学习笔记 一</div>
+                <a href= "/2019/07/29/常见的端口/" title= "常见的端口号">
+                    <div class="prevTitle">常见的端口号</div>
                 </a>
             
         </li>
@@ -606,7 +548,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title：-HTML基础学习记录"><span class="toc-number">1.</span> <span class="toc-text">title： HTML基础学习记录</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#0x01-什么是HTML-来自百度百科"><span class="toc-number"></span> <span class="toc-text">0x01 什么是HTML(来自百度百科)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#0x02-定义："><span class="toc-number">1.</span> <span class="toc-text">0x02 定义：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0x03-语言特点"><span class="toc-number">2.</span> <span class="toc-text">0x03 语言特点</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#0x04-基础格式和标签简录"><span class="toc-number"></span> <span class="toc-text">0x04  基础格式和标签简录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#0x05-HTML语言基础格式"><span class="toc-number">1.</span> <span class="toc-text">0x05 HTML语言基础格式</span></a></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
