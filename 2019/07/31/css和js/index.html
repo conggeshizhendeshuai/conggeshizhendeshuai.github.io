@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>常见的端口号 · Cong&#39;s Blog</title>
+    <title>css和js学习简录 · Cong&#39;s Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/" >Cong&#39;s Blog.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">常见的端口号</a>
+                <a href="#" class="post-name">css和js学习简录</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            常见的端口号
+            css和js学习简录
             <!-- 404 -->
             
         </h1>
@@ -266,12 +266,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">3.7k</span>阅读时长: <span class="post-count reading-time">14 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">2.1k</span>阅读时长: <span class="post-count reading-time">8 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/07/29</span>
+                    <span class="post-intro-time">2019/07/31</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -395,81 +395,99 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>端口                                               端口说明                                       攻击方向<br>21/22/69                          Ftp/Tftp文件传输协议                          允许匿名上传，下载，爆破和嗅探操作<br>2049                              Nfs服务                                      配置不当<br>139                               Samba服务                                    爆破、未授权访问、远程代码执行<br>389                               Ldap目录访问协议                              注入、允许匿名访问、弱口令<br>22                                SSH远程连接                                   爆破、SSH隧道及内网代理转发、文件传输<br>23                                Telnet远程连接                                爆破、嗅探、弱口令<br>3389                              Rdp远程桌面连接                               Shin后门(需要Windows Sever 2003以下的系统)、爆破<br>5900                              VNC                                          弱口令爆破<br>5632                              PyAnywhere服务                               抓密码、  代码执行<br>80/443/8080                       常见的Web服务端口                             Web攻击、爆破、对应服务器版本漏洞<br>7001/7002                         WebLogic 控制台                              Java反序列化、弱口令<br>8080/8089                         Jboss/Resin/jetty/jenkins                    反序列化、控制台弱口令<br>9090                              WebSphere 控制台                              Java反序列化、弱口令<br>4848                              GlassFish控制台                               弱口令<br>1352                              Lotus domino邮件服务                          弱口令、信息泄露、爆破<br>10000                             Webmin-Web控制面板                            弱口令<br>3306                              MySQL                                        注入、提权、爆破<br>1433                              MSSQL数据库                                   注入、提权、SA弱口令、爆破<br>1521                              Oracle数据库                                  TNS爆破、注入、反弹Shell<br>5432                              PostgreSQL数据库                              爆破、注入、弱口令<br>27017/27018                       MongoDB                                      爆破、未授权访问<br>6379                              Redis数据库                                  可尝试未授权访问、弱口令爆破<br>5000                              SysBase/DB2数据库                            爆破、注入<br>25                                SMTP邮件服务                                 邮件伪造<br>110                               POP3协议                                     爆破、嗅探<br>143                               IMAP协议                                     爆破<br>53                                DNS域名系统                                  允许区域传送、DNS劫持、缓存投毒、欺骗<br>67/68                             DHCP服务                                     劫持、欺骗<br>161                               SNMP协议                                     爆破、搜集目标内网信息<br>2181                              Zookeeper服务                                未授权访问<br>11211                             Memcache服务                                 未授权访问<br>8069                              Zabbix服务                                   远程执行、SQL注入<br>9200/9300                         Elasticsearch服务                            远程执行<br> 512/513/514                      Linux Rexec服务                              爆破、Rlogin 登录<br>873                               Rsync服务                                    匿名访问、文件上传<br>3690                              Svn服务                                      Svn泄露、未授权访问<br>50000                             SAP Management Console                       远程执行</p>
-<p>端口：0<br>服务：Reserved<br>说明：通常用于分析操作系统。这一方法能够工作是因为在一些系统中“0”是无效端口，当你试图使用通常的闭合端口连接它时将产生不同的结果。一种典型的扫描，使用IP地址为0.0.0.0，设置ACK位并在以太网层广播。 </p>
-<p>端口：1<br>服务：tcpmux<br>说明：这显示有人在寻找SGI Irix机器。Irix是实现tcpmux的主要提供者，默认情况下tcpmux在这种系统中被打开。Irix机器在发布是含有几个默认的无密码的帐户，如：IP、GUEST UUCP、NUUCP、DEMOS 、TUTOR、DIAG、OUTOFBOX等。许多管理员在安装后忘记删除这些帐户。因此HACKER在INTERNET上搜索tcpmux并利用这些帐户。 </p>
-<p>端口：7<br>服务：Echo<br>说明：能看到许多人搜索Fraggle放大器时，发送到X.X.X.0和X.X.X.255的信息。 </p>
-<p>端口：19<br>服务：Character Generator<br>说明：这是一种仅仅发送字符的服务。UDP版本将会在收到UDP包后回应含有垃圾字符的包。TCP连接时会发送含有垃圾字符的数据流直到连接关闭。HACKER利用IP欺骗可以发动DoS攻击。伪造两个chargen服务器之间的UDP包。同样Fraggle DoS攻击向目标地址的这个端口广播一个带有伪造受害者IP的数据包，受害者为了回应这些数据而过载。 </p>
-<p>端口：21<br>服务：FTP<br>说明：FTP服务器所开放的端口，用于上传、下载。最常见的攻击者用于寻找打开anonymous的FTP服务器的方法。这些服务器带有可读写的目录。木马Doly Trojan、Fore、Invisible FTP、WebEx、WinCrash和Blade Runner所开放的端口。 </p>
-<p>端口：22<br>服务：Ssh<br>说明：PcAnywhere建立的TCP和这一端口的连接可能是为了寻找ssh。这一服务有许多弱点，如果配置成特定的模式，许多使用RSAREF库的版本就会有不少的漏洞存在。 </p>
-<p>端口：23<br>服务：Telnet<br>说明：远程登录，入侵者在搜索远程登录UNIX的服务。大多数情况下扫描这一端口是为了找到机器运行的操作系统。还有使用其他技术，入侵者也会找到密码。木马Tiny Telnet Server就开放这个端口。 </p>
-<p>端口：25<br>服务：SMTP<br>说明：SMTP服务器所开放的端口，用于发送邮件。入侵者寻找SMTP服务器是为了传递他们的SPAM。入侵者的帐户被关闭，他们需要连接到高带宽的E-MAIL服务器上，将简单的信息传递到不同的地址。木马Antigen、Email Password Sender、Haebu Coceda、Shtrilitz Stealth、WinPC、WinSpy都开放这个端口。 </p>
-<p>端口：31<br>服务：MSG Authentication<br>说明：木马Master Paradise、Hackers Paradise开放此端口。 </p>
-<p>端口：42<br>服务：WINS Replication<br>说明：WINS复制 </p>
-<p>端口：53<br>服务：Domain Name Server（DNS）<br>说明：DNS服务器所开放的端口，入侵者可能是试图进行区域传递（TCP），欺骗DNS（UDP）或隐藏其他的通信。因此防火墙常常过滤或记录此端口。 </p>
-<p>端口：67<br>服务：Bootstrap Protocol Server<br>说明：通过DSL和Cable modem的防火墙常会看见大量发送到广播地址255.255.255.255的数据。这些机器在向DHCP服务器请求一个地址。HACKER常进入它们，分配一个地址把自己作为局部路由器而发起大量中间人（man-in-middle）攻击。客户端向68端口广播请求配置，服务器向67端口广播回应请求。这种回应使用广播是因为客户端还不知道可以发送的IP地址。 </p>
-<p>端口：69<br>服务：Trival File Transfer<br>说明：许多服务器与bootp一起提供这项服务，便于从系统下载启动代码。但是它们常常由于错误配置而使入侵者能从系统中窃取任何 文件。它们也可用于系统写入文件。 </p>
-<p>端口：79<br>服务：Finger Server<br>说明：入侵者用于获得用户信息，查询操作系统，探测已知的缓冲区溢出错误，回应从自己机器到其他机器Finger扫描。 </p>
-<p>端口：80<br>服务：HTTP<br>说明：用于网页浏览。木马Executor开放此端口。 </p>
-<p>端口：99<br>服务：gram Relay<br>说明：后门程序ncx99开放此端口。 </p>
-<p>端口：102<br>服务：Message transfer agent(MTA)-X.400 over TCP/IP<br>说明：消息传输代理。 </p>
-<p>端口：109<br>服务：Post Office Protocol -Version3<br>说明：POP3服务器开放此端口，用于接收邮件，客户端访问服务器端的邮件服务。POP3服务有许多公认的弱点。关于用户名和密码交 换缓冲区溢出的弱点至少有20个，这意味着入侵者可以在真正登陆前进入系统。成功登陆后还有其他缓冲区溢出错误。 </p>
-<p>端口：110<br>服务：SUN公司的RPC服务所有端口<br>说明：常见RPC服务有rpc.mountd、NFS、rpc.statd、rpc.csmd、rpc.ttybd、amd等 </p>
-<p>端口：113<br>服务：Authentication Service<br>说明：这是一个许多计算机上运行的协议，用于鉴别TCP连接的用户。使用标准的这种服务可以获得许多计算机的信息。但是它可作为许多服务的记录器，尤其是FTP、POP、IMAP、SMTP和IRC等服务。通常如果有许多客户通过防火墙访问这些服务，将会看到许多这个端口的连接请求。记住，如果阻断这个端口客户端会感觉到在防火墙另一边与E-MAIL服务器的缓慢连接。许多防火墙支持TCP连接的阻断过程中发回RST。这将会停止缓慢的连接。 </p>
-<p>端口：119<br>服务：Network News Transfer Protocol<br>说明：NEWS新闻组传输协议，承载USENET通信。这个端口的连接通常是人们在寻找USENET服务器。多数ISP限制，只有他们的客户才能访问他们的新闻组服务器。打开新闻组服务器将允许发/读任何人的帖子，访问被限制的新闻组服务器，匿名发帖或发送SPAM。 </p>
-<p>端口：135<br>服务：Location Service<br>说明：Microsoft在这个端口运行DCE RPC end-point mapper为它的DCOM服务。这与UNIX 111端口的功能很相似。使用DCOM和RPC的服务利用计算机上的end-point mapper注册它们的位置。远端客户连接到计算机时，它们查找end-point mapper找到服务的位置。HACKER扫描计算机的这个端口是为了找到这个计算机上运行Exchange Server吗？什么版本？还有些DOS攻击直接针对这个端口。 </p>
-<p>端口：137、138、139<br>服务：NETBIOS Name Service<br>说明：其中137、138是UDP端口，当通过网上邻居传输文件时用这个端口。而139端口：通过这个端口进入的连接试图获得NetBIOS/SMB服务。这个协议被用于windows文件和打印机共享和SAMBA。还有WINS Regisrtation也用它。 </p>
-<p>端口：143<br>服务：Interim Mail Access Protocol v2<br>说明：和POP3的安全问题一样，许多IMAP服务器存在有缓冲区溢出漏洞。记住：一种LINUX蠕虫（admv0rm）会通过这个端口繁殖，因此许多这个端口的扫描来自不知情的已经被感染的用户。当REDHAT在他们的LINUX发布版本中默认允许IMAP后，这些漏洞变的很流行。这一端口还被用于IMAP2，但并不流行。 </p>
-<p>端口：161<br>服务：SNMP<br>说明：SNMP允许远程管理设备。所有配置和运行信息的储存在数据库中，通过SNMP可获得这些信息。许多管理员的错误配置将被暴露在Internet。Cackers将试图使用默认的密码public、private访问系统。他们可能会试验所有可能的组合。SNMP包可能会被错误的指向用户的网络。 </p>
-<p>端口：177<br>服务：X Display Manager Control Protocol<br>说明：许多入侵者通过它访问X-windows操作台，它同时需要打开6000端口。 </p>
-<p>端口：389<br>服务：LDAP、ILS<br>说明：轻型目录访问协议和NetMeeting Internet Locator Server共用这一端口。 </p>
-<p>端口：443<br>服务：Https<br>说明：网页浏览端口，能提供加密和通过安全端口传输的另一种HTTP。 </p>
-<p>端口：456<br>服务：[NULL]<br>说明：木马HACKERS PARADISE开放此端口。 </p>
-<p>端口：513<br>服务：Login,remote login<br>说明：是从使用cable modem或DSL登陆到子网中的UNIX计算机发出的广播。这些人为入侵者进入他们的系统提供了信息。 </p>
-<p>端口：544<br>服务：[NULL]<br>说明：kerberos kshell </p>
-<p>端口：548<br>服务：Macintosh,File Services(AFP/IP)<br>说明：Macintosh,文件服务。 </p>
-<p>端口：553<br>服务：CORBA IIOP （UDP）<br>说明：使用cable modem、DSL或VLAN将会看到这个端口的广播。CORBA是一种面向对象的RPC系统。入侵者可以利用这些信息进入系统。 </p>
-<p>端口：555<br>服务：DSF<br>说明：木马PhAse1.0、Stealth Spy、IniKiller开放此端口。 </p>
-<p>端口：568<br>服务：Membership DPA<br>说明：成员资格 DPA。 </p>
-<p>端口：569<br>服务：Membership MSN<br>说明：成员资格 MSN。 </p>
-<p>端口：635<br>服务：mountd<br>说明：Linux的mountd Bug。这是扫描的一个流行BUG。大多数对这个端口的扫描是基于UDP的，但是基于TCP的mountd有所增加（mountd同时运行于两个端口）。记住mountd可运行于任何端口（到底是哪个端口，需要在端口111做portmap查询），只是Linux默认端口是635，就像NFS通常运行于2049端口。 </p>
-<p>端口：636<br>服务：LDAP<br>说明：SSL（Secure Sockets layer） </p>
-<p>端口：666<br>服务：Doom Id Software<br>说明：木马Attack FTP、Satanz Backdoor开放此端口 </p>
-<p>端口：993<br>服务：IMAP<br>说明：SSL（Secure Sockets layer） </p>
-<p>端口：1001、1011<br>服务：[NULL]<br>说明：木马Silencer、WebEx开放1001端口。木马Doly Trojan开放1011端口。 </p>
-<p>端口：1024<br>服务：Reserved<br>说明：它是动态端口的开始，许多程序并不在乎用哪个端口连接网络，它们请求系统为它们分配下一个闲置端口。基于这一点分配从端口1024开始。这就是说第一个向系统发出请求的会分配到1024端口。你可以重启机器，打开Telnet，再打开一个窗口运行natstat -a 将会看到Telnet被分配1024端口。还有SQL session也用此端口和5000端口。 </p>
-<p>端口：1025、1033<br>服务：1025：network blackjack 1033：[NULL]<br>说明：木马netspy开放这2个端口。 </p>
-<p>端口：1080<br>服务：SOCKS<br>说明：这一协议以通道方式穿过防火墙，允许防火墙后面的人通过一个IP地址访问INTERNET。理论上它应该只允许内部的通信向外到达INTERNET。但是由于错误的配置，它会允许位于防火墙外部的攻击穿过防火墙。WinGate常会发生这种错误，在加入IRC聊天室时常会看到这种情况。 </p>
-<p>端口：1170<br>服务：[NULL]<br>说明：木马Streaming Audio Trojan、Psyber Stream Server、Voice开放此端口。 </p>
-<p>端口：1234、1243、6711、6776<br>服务：[NULL]<br>说明：木马SubSeven2.0、Ultors Trojan开放1234、6776端口。木马SubSeven1.0/1.9开放1243、6711、6776端口。 </p>
-<p>端口：1245<br>服务：[NULL]<br>说明：木马Vodoo开放此端口。 </p>
-<p>端口：1433<br>服务：SQL<br>说明：Microsoft的SQL服务开放的端口。 </p>
-<p>端口：1492<br>服务：stone-design-1<br>说明：木马FTP99CMP开放此端口。 </p>
-<p>端口：1500<br>服务：RPC client fixed port session queries<br>说明：RPC客户固定端口会话查询 </p>
-<p>端口：1503<br>服务：NetMeeting T.120<br>说明：NetMeeting T.120 </p>
-<p>端口：1524<br>服务：ingress<br>说明：许多攻击脚本将安装一个后门SHELL于这个端口，尤其是针对SUN系统中Sendmail和RPC服务漏洞的脚本。如果刚安装了防火墙就看到在这个端口上的连接企图，很可能是上述原因。可以试试Telnet到用户的计算机上的这个端口，看看它是否会给你一个SHELL。连接到600/pcserver也存在这个问题。 </p>
-<p>端口：1600<br>服务：issd<br>说明：木马Shivka-Burka开放此端口。 </p>
-<p>端口：1720<br>服务：NetMeeting<br>说明：NetMeeting H.233 call Setup。 </p>
-<p>端口：1731<br>服务：NetMeeting Audio Call Control<br>说明：NetMeeting音频调用控制。 </p>
-<p>端口：1807<br>服务：[NULL]<br>说明：木马SpySender开放此端口。 </p>
-<p>端口：1981<br>服务：[NULL]<br>说明：木马ShockRave开放此端口。 </p>
-<p>端口：1999<br>服务：cisco identification port<br>说明：木马BackDoor开放此端口。 </p>
-<p>端口：2000<br>服务：[NULL]<br>说明：木马GirlFriend 1.3、Millenium 1.0开放此端口。 </p>
-<p>端口：2001<br>服务：[NULL]<br>说明：木马Millenium 1.0、Trojan Cow开放此端口。 </p>
-<p>端口：2023<br>服务：xinuexpansion 4<br>说明：木马Pass Ripper开放此端口。 </p>
-<p>端口：2049<br>服务：NFS<br>说明：NFS程序常运行于这个端口。通常需要访问Portmapper查询这个服务运行于哪个端口。 </p>
-<p>端口：2115<br>服务：[NULL]<br>说明：木马Bugs开放此端口。 </p>
-<p>端口：2140、3150<br>服务：[NULL]<br>说明：木马Deep Throat 1.0/3.0开放此端口。 </p>
-<p>端口：2500<br>服务：RPC client using a fixed port session replication<br>说明：应用固定端口会话复制的RPC客</p>
+        <h1 id="css简录"><a href="#css简录" class="headerlink" title="css简录"></a>css简录</h1><p>   css指的是层叠样式表 是一种用来表现HTML等文件样式的计算机语言，css可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化，<br>   css为HTML标记语言提供了一种样式描述，定义了其中元素的显示方式。<br>   css具有以下特点：<br>   1.丰富的样式定义：<br>   css提供了丰富的文档样式外观，以及设置文本和背景属性的能力;允许为任何元素创建边框，以及元素边框与其他元素的距离，以及元素边框与元素内容的距离；允许随意改变文本的大小写方式、修饰方式以及其他页面效果。<br>   2.易于使用和修改<br>   css可以将样式定义在HTML元素的style中，也可以将其定义在HTML文档的header部分，也可已将样式声明在一个专门的css文件中，以供HTML页面应用。总之，css样式表可以将所有的样式声明同意存放和管理。<br>   3.多面应用<br>   css样式表可以单独存放在一个css文件中，这样我们就可以在多个页面中使用同一个css样式表。css样式表理论上不输于任何文件，在任何页面文件中都可以将其引用。这样就可以实现多个页面风格的同一。<br>   4.层叠<br>   层叠就是对一个元素多次设置同一个样式，这将使用最后一次设置的属性值，例如对一个站点中的多个页面使用了同一套的css样式表，在某些页面中的某些元素想使用其他样式，就可以针对这些样式单独定义一个样式表应用到页面中。<br>   5.页面压缩<br>   在使用HTML定义页面效果的网站中，往往需要大量或者重复的表格和font元素形成各种规格的文字样式，这样做的后果就是会产生大量的HTML标签，从而使页面文件的大小增加。而将样式声明放到css样式表中，可以大大的减小网页的面积，这样在加载页面时使用的时间也会大大的减少。另外，css样式表的附庸更大程度的缩减了页面的体积，减少加载的时间。</p>
+<p>   css笔记杂记：<br>   行内样式<br>1.</p><p style="“display：none”\">&lt;/&gt;<br>2.内嵌式</p>
+<p>&lt;style&gt;标签 .a_style 必须写在head标签了。<br>3.<link rel="\"> 加载一个css文件链接<br>4.css 0margin 属性 margin 简写属性在一个声明中设置所有外边距属性。该属性可以有 1 到 4 个值。 这个简写属性设置一个元素所有外边距的宽度，或者设置各边上外边距的宽度。<br>块级元素的垂直相邻外边距会合并，而行内元素实际上不占上下外边距。行内元素的的左右外边距不会合并。同样地，浮动元素的外边距也不会合并。允许指定负的外边距值，不过使用时要小心。<br>5.CSS注释以 “/*” 开始, 以 “*/“ 结束</p>
+<h1 id="javascript-学习简录"><a href="#javascript-学习简录" class="headerlink" title="javascript 学习简录"></a>javascript 学习简录</h1><p>在HTML基础上，使用Javascript可以开发交互式Web网页。Javascript的出现使得网页和用户之间实现了一种实时性的、动态的、交互性的关系，使网页包含更多活跃的元素和更加精彩的内容。 运行用Javascript编写的程序需要能支持Javascript语言的浏览器。Netscape公司 Navigator 3．0以上版本的浏览器都能支持 Javascript程序，微软公司Internet Explorer 3．0以上版本的浏览器基本上支持Javascript。微软公司还有自己开发的Javascript，称为JScript。 Javascript和Jscript基本上是相同的，只是在一些细节上有出入。 Javascript短小精悍， 又是在客户机上执行的，大大提高了网页的浏览速度和交互能力。 同时它又是专门为制作Web网页而量身定做的一种简单的编程语言。<br>JavaScript 使网页增加互动性。JavaScript 使有规律地重复的HTML文段简化，减少下载时间。JavaScript 能及时响应用户的操作，对提交表单做即时的检查，无需浪费时间交由 CGI 验证。JavaScript 的特点是无穷无尽的，只要你有创意。</p>
+<h2 id="JavaScript学习杂记"><a href="#JavaScript学习杂记" class="headerlink" title="JavaScript学习杂记"></a>JavaScript学习杂记</h2><p>1.Js是写在&lt;script type=””&gt;&lt;/script&gt;标签内的，只要是下载&lt;html&gt;标签内就都可以生效。<br>2.HTML DOM 当网页被加载时，浏览器会创建页面的文档对象模型（Document Object Model）<br>3.在 DOM 中查找 HTML 元素的最简单的方法，是通过使用元素的 id。var x=document.getElementById(“intro”); 如果找到该元素，则该方法将以对象（在 x 中）的形式返回该元素。如果未找到该元素，则 x 将包含 null。<br>4.通过标签名查找 HTML 元素 var x=document.getElementById(“main”);  var y=x.getElementsByTagName(“p”);查找id=main的元素，然后查找这个元素中所有&lt;p&gt;元素。<br>5.改变 HTML 内容 修改 HTML 内容的最简单的方法是使用 innerHTML 属性 document.getElementById(id).innerHTML=新的 HTML<br>&lt;html&gt;<br>&lt;body&gt;</p>
+<p id="p1" \>Hello World!
 
+</p><p>&lt;script&gt;<br>document.getElementById(“p1”).innerHTML=”新文本!”;<br>&lt;/script&gt;</p>
+<p>&lt;/body&gt;<br>&lt;/html&gt; 这是一个实例<br>6.改变 HTML 样式,document.getElementById(id).style.property=新样式。</p>
+<!DOCTYPE html\>
+<p>&lt;html&gt;<br>&lt;head&gt;</p>
+<meta charset="utf-8" \>
+<title\>菜鸟教程(runoob.com)</title\>
+
+<body\>
+
+<p id="p1" \>Hello World!
+</p><p id="p2" \>Hello World!
+<script\>
+document.getElementById("p2").style.color="blue";
+document.getElementById("p2").style.fontFamily="Arial";
+document.getElementById("p2").style.fontSize="larger";
+</script\>
+<p\>以上段落通过脚本修改。</p\>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script>
+
+7.addEventListener() 方法 document.getElementById("myBtn").addEventListener("click", displayDate);
+addEventListener() 方法用于向指定元素添加事件句柄。addEventListener() 方法添加的事件句柄不会覆盖已存在的事件句柄。
+你可以向一个元素添加多个事件句柄。你可以向同个元素添加多个同类型的事件句柄，如：两个 "click" 事件。
+你可以向任何 DOM 对象添加事件监听，不仅仅是 HTML 元素。如： window 对象。
+() 方法可以更简单的控制事件（冒泡与捕获）。当你使用 addEventListener() 方法时, JavaScript 从 HTML 标记中分离开来，可读性更强， 在没有控制HTML标记时也可以添加事件监听。你可以使用 removeEventListener() 方法来移除事件的监听.
+语法：element.addEventListener(event, function, useCapture); 一个参数是事件的类型 (如 "click" 或 "mousedown").
+第二个参数是事件触发后调用的函数。第三个参数是个布尔值用于描述事件是冒泡还是捕获。该参数是可选的。注意:不要使用 "on" 前缀。 例如，使用 "click" ,而不是使用 "onclick"。
+8.创建新的 HTML 元素 (节点) - appendChild()
+以下代码是用于创建 <p\> 元素:
+var para = document.createElement("p");
+为 <p\> 元素创建一个新的文本节点：
+var node = document.createTextNode("这是一个新的段落。");
+将文本节点添加到 <p> 元素中：
+para.appendChild(node);
+最后，在一个已存在的元素中添加 p 元素。
+查找已存在的元素：
+var element = document.getElementById("div1");
+添加到已存在的元素中:
+element.appendChild(para);
+9.建新的 HTML 元素 (节点) - insertBefore()
+div id="div1">
+</p><p id="p1" \>这是一个段落。</p></p\>
+<p id="p2" \>这是另外一个段落。</p></p\>
+
+<script\>
+var para = document.createElement("p");
+var node = document.createTextNode("这是一个新的段落。");
+para.appendChild(node);
+
+<p>var element = document.getElementById(“div1”);<br>var child = document.getElementById(“p1”);<br>element.insertBefore(para, child);<br>&lt;/script&gt;<br>运行结果是：</p>
+<p>这是一个新的段落。</p>
+<p>这是一个段落。</p>
+<p>这是另外一个段落。<br>10.移除已存在的元素<br>实例：</p>
+<div id="div1" \>
+<p id="p1" \>这是一个段落。
+</p><p id="p2" \>这是另外一个段落。
+
+<script\>
+var parent = document.getElementById("div1");
+var child = document.getElementById("p1");
+parent.removeChild(child);
+</script\>
+运行结果：这是另外一个段落。
+11. HTML 文档中 <div\> 元素包含两个子节点(两个<p\>元素):
+<div id="div1" \>
+<p id="p1" \>这是一个段落。</p></div></p\>
+<p id="p2" \>这是另外一个段落。
+</p></div\>
+查找 id="div1" 的元素:
+var parent = document.getElementById("div1");
+查找 id="p1" 的 <p\> 元素:
+var child = document.getElementById("p1");
+从父元素中移除子节点：
+parent.removeChild(child); 
+tips:如果能够在不引用父元素的情况下删除某个元素，就太好了。不过很遗憾。DOM 需要清楚您需要删除的元素，以及它的父元素。
+以下代码是已知要查找的子元素，然后查找其父元素，再删除这个子元素（删除节点必须知道父节点）：
+var child = document.getElementById("p1");
+child.parentNode.removeChild(child);</p\></p></div></script\></p></body\>
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="http://yoursite.com">cong cong</a>
-            <p>原文链接：<a href="http://yoursite.com/2019/07/29/常见的端口/">http://yoursite.com/2019/07/29/常见的端口/</a>
-            <p>发表日期：<a href="http://yoursite.com/2019/07/29/常见的端口/">July 29th 2019, 10:11:52 pm</a>
-            <p>更新日期：<a href="http://yoursite.com/2019/07/29/常见的端口/">July 29th 2019, 10:19:00 pm</a>
+            <p>原文链接：<a href="http://yoursite.com/2019/07/31/css和js/">http://yoursite.com/2019/07/31/css和js/</a>
+            <p>发表日期：<a href="http://yoursite.com/2019/07/31/css和js/">July 31st 2019, 9:35:17 pm</a>
+            <p>更新日期：<a href="http://yoursite.com/2019/07/31/css和js/">July 31st 2019, 11:31:12 pm</a>
             <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -477,17 +495,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2019/07/30/HTML学习简录/" title= "HTML学习简录">
-                    <div class="nextTitle">HTML学习简录</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/2019/07/29/渗透学习笔记 一/" title= "渗透学习笔记 一">
-                    <div class="prevTitle">渗透学习笔记 一</div>
+                <a href= "/2019/07/30/HTML学习简录/" title= "HTML学习简录">
+                    <div class="prevTitle">HTML学习简录</div>
                 </a>
             
         </li>
@@ -606,7 +619,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#css简录"><span class="toc-number">1.</span> <span class="toc-text">css简录</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#javascript-学习简录"><span class="toc-number">2.</span> <span class="toc-text">javascript 学习简录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript学习杂记"><span class="toc-number">2.1.</span> <span class="toc-text">JavaScript学习杂记</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
