@@ -78,6 +78,8 @@
     <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
     
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -201,10 +203,8 @@
 </head>
 
     
-        <body class="home-body">
     
-    
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
@@ -220,34 +220,21 @@
 
 
 
-
-height:50vh;
 ">
     
     <!-- 主页  -->
-    
-    
-    <!-- 文章页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Cong's Blog.
-            <!-- 文章页  -->
-            
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
-            
-            
-                这真的是聪哥的博客
-            
-            <!-- 文章页  -->
             
         </p>
         <!-- 文章页meta -->
@@ -376,279 +363,10 @@ height:50vh;
         </div>
     </article>
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/31/css和js/" >
-            
-                <span>css和js学习简录</span>
-        </a>
-        <div class="abstract-content">
-            css简录   css指的是层叠样式表 是一种用来表现HTML等文件样式的计算机语言，css可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化，   css为HTML标记语言提供了一种样式描述，定义了其中元素的显示方式。   css具有以下特点：   1.丰富的样式定义：   css提供了丰富的文档样式外观，以及设置文本和背景属性的能力;允许为任何元素创建边框，以及元素边框与其他元素的距离，以及元素边框与元素内容的距离；允许随意改变文本的大小写方式、修饰方式以及其他页面效果。   2.易于使用和修改   css可以将样式定义在HTML元素的style中，也可以将其定义...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/31</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/30/HTML学习简录/" >
-            
-                <span>HTML学习简录</span>
-        </a>
-        <div class="abstract-content">
-            0x01 什么是HTML(来自百度百科)  超文本标记语言（Hyper Text Marku Language) ,标准通用标记语言的一个应用。HTML不是一种编程语言，而是一种标 记语言,是网页制作所必备的.”超文本”就是指页面可以包含图片、链接、甚至音乐、程序等非文字元素。超文本标记语言的机构包括  “头”部分、和”主体”部分,其中”头”部提供关于网页的信息，”主体”部分提供网页的具体内容。
-0x02 定义：  超级文本标记语言是标准通用标记语言下的一个应用，也是一种规范，一种标准，它通过标记符号来标记要显示的网页中的各个部分。网页文件本身是一种文本文件，通过在文本文件中添加标记符，...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/30</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/29/常见的端口/" >
-            
-                <span>常见的端口号</span>
-        </a>
-        <div class="abstract-content">
-            端口                                               端口说明                                       攻击方向21/22/69                          Ftp/Tftp文件传输协议                          允许匿名上传，下载，爆破和嗅探操作2049                              Nfs服务                                      配置不当139                          ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/29</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/29/渗透学习笔记 一/" >
-            
-                <span>渗透学习笔记 一</span>
-        </a>
-        <div class="abstract-content">
-            0x01    信息安全的定义  信息安全，意为保护信息及信息系统免受未经授权的进入、使用破坏、修改、检视、记录以及销毁。
-0x02    信息安全的影响  政府、军队、公司、金融机构、医院、私人企业积累了大量的有关他们的雇员、顾客、研究、金融数据的机密信息。绝大多数此类信  息现在被存储在手机、计算机、存储设备内，并通过网络传送到别的计算机  诸如一家企业的顾客、财政情况、新产品线等机密信息落入其他竞争对手的手中，这种安全性的丧失可能导致经济上的损失、法律诉讼甚至 能导致该企业的破产。保护机密的信息是商业上的需求，并且在许多情况下也是道德和法律上的需求
-0x03    信息安全的保障 ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/29</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/28/phpMyadmin4.8文件包含漏洞/" >
-            
-                <span>phpMyadmin4.8.0 文件包含漏洞浅析</span>
-        </a>
-        <div class="abstract-content">
-            0X01  什么是文件包含漏洞  程序开发人员通常会把可重复使用的函数写到单个文件中，在使用其他函数时，可以直接调用此文件，无需再次编写此函数，这种文件调用的过程一般称之为包含。  程序开发人员都希望代码使用更加灵活，所以通常会将被包含的文件设置为变量，来进行动态调用。正是这种灵活性，可能导致客户端可以调用一个恶意文件，造成文件包含漏洞。造成包含漏洞的原因是：通过服务器脚本的函数引用文件时，由于传入的文件没有经过合理的校验和过滤，从而操作了预想之外的文件，导致意外的文件泄露、恶意代码的注入等。  文件包含分为两种：一种是本地文件包含，另一种是远程文件包含
-0x02  文件包含漏洞涉及到的...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/28</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/24/聪哥只是真的像而已/" >
-            
-                <span>聪哥？？？</span>
-        </a>
-        <div class="abstract-content">
-               别问？ 问就是长得像聪哥。
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/24</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/23/hello-world/" >
-            
-                <span>Hello World</span>
-        </a>
-        <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-
-More info: Writing
-Run server1$ hexo server
-
-Mo...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/23</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
     <!-- paginator  -->
     
 </main>
             <!-- profile -->
-            
-            <div class="profile">
-    <img class="profile-avatar" alt="avatar" src= /avatar/Misaka.jpg >
-    <div class="profile-name">Cong's Blog</div>
-    
-    <div class="profile-signature">
-        witness me
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
-            
-                <a href="mailto:bugaosuniwodeyouxiang" class="iconfont-archer email" title=email ></a>
-            
-        
-    
-        
-            
-                <a href="https://conggeshizhendeshuai.github.io" class="iconfont-archer github" target="_blank" title=github></a>
-            
-        
-    
-        
-            
-                <span class="iconfont-archer wechat" title=wechat>
-                  
-                  <img class="profile-qr" src="/assets/example_qr.png" />
-                </span>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-    </div>
-    
-    
-        <div class="friends">
-            <div>FRIENDS</div>
-            
-                
-                    <span>
-                        <a href= //onezero.site target="_black">浮鱼</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href= //wanfeng98.cn target="_black">主席</a>
-                    </span>
-                
-            
-                
-            
-        </div>
-    
-    
-        <div class="about-me">
-            <a href = "/about" >ABOUT ME</a>
-        </div>
-    
-</div>
             
         </div>
         <footer class="footer footer-unloaded">
