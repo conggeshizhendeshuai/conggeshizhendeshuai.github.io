@@ -266,7 +266,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">485</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">857</span>阅读时长: <span class="post-count reading-time">4 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -448,6 +448,59 @@ for ( $i4 = 1; $i4 &lt; 5; $i4++ ) /*这是五角星的下面两个角*/
     printf( &quot;\n&quot; );
 }
 printf(&quot;\n\n&quot; );
+?&gt;</code></pre><h1 id="新闻界面："><a href="#新闻界面：" class="headerlink" title="新闻界面："></a>新闻界面：</h1><h2 id="源码如下"><a href="#源码如下" class="headerlink" title="源码如下"></a>源码如下</h2><pre><code> &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;震惊部新闻合集&lt;/title&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table&gt;
+&lt;tr&gt;
+    &lt;th&gt;热度&lt;/th&gt;
+    &lt;th&gt;标题&lt;/th&gt;
+    &lt;th&gt;时间&lt;/th&gt;
+    &lt;th&gt;作者&lt;/th&gt;
+    &lt;th&gt;操作&lt;/th&gt;
+&lt;/tr&gt;
+&lt;?php
+$f=fopen(&apos;data_db&apos;,&apos;r&apos;);//以只读模式打开data_db.txt文件
+$i=1;
+while (!feof($f)){ //通过判断光标是否到末尾，是的话就已经输出完了，跳出循环
+    $input=fgets($f);//获取文件内容，一次只有一行
+    $data=explode(&apos;||&apos;,$input);//将获取到的内容分隔开，组成一个数组。
+    echo_table($data);//这个while循环就是将dbta_db的文件内容完全输出，
+}
+?&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;?php
+function echo_info($data){
+   $content=substr(base64_decode($data[2]),0,200);//将data[2]里的内容解密,取出200长度的内容
+   echo &lt;&lt;&lt;EOF
+&lt;tr&gt;
+&lt;td&gt;&lt;img src=&quot;*&quot;&gt;&lt;/td&gt;//连接图片
+&lt;td&gt; colspan=&quot;4&quot;&gt;{$content} &lt;/td&gt;//固定大小
+&lt;/tr&gt;
+EOF;
+}
+function echo_table($data){
+   $hot=$data[5];
+   $author=$data[3];
+   $add_date=$data[4];//将数组的元素赋值到变量中
+   $title=base64_decode($data[1]);
+   $content=base64_decode($data[3]);//解密数组中的元素
+   echo &lt;&lt;&lt;EOF
+   &lt;tr&gt;
+   &lt;td&gt; {$hot} &lt;/td&gt;
+   &lt;td&gt; {$title} &lt;/td&gt;
+   &lt;td&gt; {$author} &lt;/td&gt;
+   &lt;td&gt; {$add_date} &lt;/td&gt;
+   &lt;td&gt;  赞/踩 &lt;/td&gt;
+   &lt;/tr&gt;
+EOF;
+}
 ?&gt;</code></pre>
     </article>
     <!-- license  -->
@@ -456,7 +509,7 @@ printf(&quot;\n\n&quot; );
             <p>原文作者：<a href="http://yoursite.com">cong cong</a>
             <p>原文链接：<a href="http://yoursite.com/2019/08/08/判断输入的是否是质数 输出一个五角星/">http://yoursite.com/2019/08/08/判断输入的是否是质数 输出一个五角星/</a>
             <p>发表日期：<a href="http://yoursite.com/2019/08/08/判断输入的是否是质数 输出一个五角星/">August 8th 2019, 1:40:25 am</a>
-            <p>更新日期：<a href="http://yoursite.com/2019/08/08/判断输入的是否是质数 输出一个五角星/">August 8th 2019, 1:54:05 am</a>
+            <p>更新日期：<a href="http://yoursite.com/2019/08/08/判断输入的是否是质数 输出一个五角星/">August 8th 2019, 1:05:46 pm</a>
             <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -593,7 +646,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#质数的判断"><span class="toc-number">1.</span> <span class="toc-text">质数的判断</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#源码如下："><span class="toc-number">1.1.</span> <span class="toc-text">源码如下：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#输出五角星："><span class="toc-number">2.</span> <span class="toc-text">输出五角星：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#源码如下：-1"><span class="toc-number">2.1.</span> <span class="toc-text">源码如下：</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#质数的判断"><span class="toc-number">1.</span> <span class="toc-text">质数的判断</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#源码如下："><span class="toc-number">1.1.</span> <span class="toc-text">源码如下：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#输出五角星："><span class="toc-number">2.</span> <span class="toc-text">输出五角星：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#源码如下：-1"><span class="toc-number">2.1.</span> <span class="toc-text">源码如下：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#新闻界面："><span class="toc-number">3.</span> <span class="toc-text">新闻界面：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#源码如下"><span class="toc-number">3.1.</span> <span class="toc-text">源码如下</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -606,8 +659,6 @@ top:50vh;
     <div class="sidebar-content sidebar-content-show-archive">
           <div class="sidebar-panel-archives">
     <!-- 在ejs中将archive按照时间排序 -->
-    
-    
     
     
     
@@ -867,21 +918,7 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2019/08/08/判断输入的是否是质数 输出一个五角星/" >质数的判断、五角星的输出</a>
-        </li>
-    
-    
-    
-    
-    
-        </ul>
-    
-    <div class="archive-year"> Invalid date </div>
-    <ul class="year-list">
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2019/07/28/phpMyadmin4.8文件包含漏洞/" >phpMyadmin4.8.0 文件包含漏洞浅析</a>
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2019/08/08/for遍历循环/" >利用for foreach循环遍历数组的方法</a>
         </li>
     
     
@@ -909,7 +946,21 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2019/08/08/for遍历循环/" >利用for foreach循环遍历数组的方法</a>
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2019/07/28/phpMyadmin4.8文件包含漏洞/" >phpMyadmin4.8.0 文件包含漏洞浅析</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> Invalid date </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2019/08/08/判断输入的是否是质数 输出一个五角星/" >质数的判断、五角星的输出</a>
         </li>
     
     
